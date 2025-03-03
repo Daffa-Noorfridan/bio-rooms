@@ -17,7 +17,7 @@
     }
     .bg-logo{
         background:rgb(255, 255, 255);
-        border-radius: 5px;
+        height:70px;
     }
 </style>
 <nav x-data="{ open: false }" class="header-nav">
@@ -26,13 +26,11 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div CLASS="bg-logo"><img src="{{ asset('app.png') }}" size="20%">&nbsp;&nbsp;&nbsp;</img></div>
-                <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <!--  <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />-->
-                        <div class="bg-logo"><font class="bio-room-span">Bio</font><font class="bio-room-span2">Room</font></div>
-                    </a>
-                </div>
+                <div class="bg-logo">
+                <div class="shrink-0 flex items-center">&nbsp; &nbsp; 
+                <img src="{{ asset('app.png') }}"></img>&nbsp;&nbsp;&nbsp;        
+                <font class="bio-room-span">Bio</font><font class="bio-room-span2">Room</font>&nbsp; &nbsp; 
+                </div></div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
