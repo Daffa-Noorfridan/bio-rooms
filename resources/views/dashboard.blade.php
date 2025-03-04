@@ -59,6 +59,7 @@
         position: absolute;
         top:15%;
         left:10%;
+        
     }
    </style>
   <title>Bio Room | Dashboard</title>
