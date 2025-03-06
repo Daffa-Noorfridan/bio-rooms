@@ -13,8 +13,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./vars.css">
   <link rel="stylesheet" href="./style.css">
-  
-  
   <style>
    a,
    button,
@@ -41,112 +39,120 @@
        margin: 0;
        padding: 0;
    }
+   .container {
+    width: 100%;
+    overflow-x: auto;
+    position: relative;
+    left:5%;
+    top:25%;
+  }
+
+  table {
+    width: 90%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  td{
+    color: #414048;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  th {
+    color: #7B9AAF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 8px;
+    color: white;
+  }
+
+  .selesai {
+    background-color: #4CAF50;
+  }
+
+  .berjalan {
+    background-color: #FFA500;
+  }
+
+  .dibatalkan {
+    background-color: #FF4D4D;
+  }
+
+  a {
+    color: #38AECA;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
    </style>
   <title>Bio Room | Booking List</title>
 </head>
 <body>
-  <div class="booking-list">
-    <div class="rectangle-96"></div>
-    <div class="rectangle-2865"></div>
-    <div class="rectangle-2864"></div>
-    <div class="rectangle-2877"></div>
-    <div class="rectangle-2866"></div>
-    <div class="kembali">Kembali</div>
-    <img class="vector" src="vector0.svg" />
-    <div class="beranda">Beranda</div>
-    <img class="vector2" src="vector1.svg" />
-    <div class="booking-list2">Booking List</div>
-    <img class="line-18" src="line-180.svg" />
-    <div class="topik">Topik</div>
-    <div class="tanggal">Tanggal</div>
-    <div class="nama-ruangan">Nama Ruangan</div>
-    <div class="aksi">Aksi</div>
-    <div class="status-rapat">Status Rapat</div>
-    <a href="/bio-room">
-    <div class="beranda2">Beranda</div>
-    <img
-      class="material-symbols-dashboard-outline-rounded"
-      src="material-symbols-dashboard-outline-rounded0.svg"
-    /></a>
-    <a href="/bio-room/ruangan">
-    <div class="ruangan">Ruangan</div>
-    <img
-      class="material-symbols-meeting-room-rounded"
-      src="material-symbols-meeting-room-rounded0.svg"
-    /></a>
-    <a href="#">
-    <div class="booking-list3">Booking List</div>
-    <img
-      class="material-symbols-list-rounded"
-      src="material-symbols-list-rounded0.svg"
-    /></a>
-    <div class="booking-list4">Booking List</div>
-    <div class="meet-up">MeetUp</div>
-    <img class="carbon-user-avatar-filled" src="carbon-user-avatar-filled0.svg" />
-    <?php
-    if ($result->num_rows >0){
-      while ($row=$result->fetch_assoc()){
-        echo "<div class='user'>". $row['name']."</div>";
-      }
-    }
-    $conn->close();
-    ?>
-    <img class="group-10" src="group-100.svg" />
-    <div class="buka-notulen">Buka Notulen</div>
-    <div class="rapat-progress-bulanan">Rapat Progress Bulanan</div>
-    <div class="_16-peserta">(16 Peserta)</div>
-    <div class="_03-feb-2025">03-Feb-2025</div>
-    <div class="the-sun">The Sun</div>
-    <div class="_10-00-10-30">10:00 - 10:30</div>
-    <div class="group-60">
-      <div class="rectangle-2888"></div>
-      <div class="selesai">Selesai</div>
-    </div>
-    <div class="lantai-5">Lantai 5</div>
-    <div class="buka-notulen2">Buka Notulen</div>
-    <div class="rapat-progress-bulanan2">Rapat Progress Bulanan</div>
-    <div class="_16-peserta2">(16 Peserta)</div>
-    <div class="_03-feb-20252">03-Feb-2025</div>
-    <div class="the-sun2">The Sun</div>
-    <div class="_10-00-10-302">10:00 - 10:30</div>
-    <div class="group-60">
-      <div class="rectangle-28882"></div>
-      <div class="dibatalkan">Dibatalkan</div>
-    </div>
-    <div class="lantai-52">Lantai 5</div>
-    <div class="buka-notulen3">Buka Notulen</div>
-    <div class="rapat-progress-bulanan3">Rapat Progress Bulanan</div>
-    <div class="_16-peserta3">(16 Peserta)</div>
-    <div class="_03-feb-20253">03-Feb-2025</div>
-    <div class="the-sun3">The Sun</div>
-    <div class="_10-00-10-303">10:00 - 10:30</div>
-    <div class="group-61">
-      <div class="rectangle-28883"></div>
-      <div class="sedang-berjalan">Sedang Berjalan</div>
-    </div>
-    <div class="lantai-53">Lantai 5</div>
-    <div class="buka-notulen4">Buka Notulen</div>
-    <div class="rapat-progress-bulanan4">Rapat Progress Bulanan</div>
-    <div class="_16-peserta4">(16 Peserta)</div>
-    <div class="_03-feb-20254">03-Feb-2025</div>
-    <div class="the-sun4">The Sun</div>
-    <div class="_10-00-10-304">10:00 - 10:30</div>
-    <div class="group-61">
-      <div class="rectangle-28884"></div>
-      <div class="sedang-berjalan2">Sedang Berjalan</div>
-    </div>
-    <div class="lantai-54">Lantai 5</div>
-    <img class="uil-arrow" src="uil-arrow0.svg" />
-    <img class="uil-arrow2" src="uil-arrow1.svg" />
-    <img class="uil-arrow3" src="uil-arrow2.svg" />
-    <img class="uil-arrow4" src="uil-arrow3.svg" />
-    <div class="line-9"></div>
-    <div class="line-10"></div>
-    <div class="line-11"></div>
-    <div class="line-12"></div>
-    <div class="line-13"></div>
+  <div class="rectangle-1">
+    <div class="text-h2">Booking List</div>
+      <section class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>Topik</th>
+              <th>Tanggal</th>
+              <th>Nama Ruangan</th>
+              <th>Status Rapat</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="./notulen">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
+              <td>03-Feb-2025<br>10:00 - 10:30</td>
+              <td>The Sun<br>Lantai 5</td>
+              <td><span class="status selesai">Selesai</span></td>
+              <td><a href="./notulen">Buka Notulen</a></td>
+            </tr>
+            <tr>
+              <td><a href="./notulen">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
+              <td>03-Feb-2025<br>10:00 - 10:30</td>
+              <td>The Sun<br>Lantai 5</td>
+              <td><span class="status berjalan">Sedang Berjalan</span></td>
+              <td><a href="./notulen">Buka Notulen</a></td>
+            </tr>
+            <tr>
+              <td><a href="./notulen">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
+              <td>03-Feb-2025<br>10:00 - 10:30</td>
+              <td>The Sun<br>Lantai 5</td>
+              <td><span class="status dibatalkan">Dibatalkan</span></td>
+              <td><a href="./notulen">Buka Notulen</a></td>
+            </tr>
+            <tr>
+              <td><a href="./notulen">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
+              <td>03-Feb-2025<br>10:00 - 10:30</td>
+              <td>The Sun<br>Lantai 5</td>
+              <td><span class="status berjalan">Sedang Berjalan</span></td>
+              <td><a href="./notulen">Buka Notulen</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
   </div>
-  
 </body>
 </html>
 </x-app-layout>
