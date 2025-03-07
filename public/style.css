@@ -135,3 +135,66 @@
   height:160px;
   max-height: 60%;
 }
+.label-popup {
+  display: block;
+  margin: 10px 0 5px;
+  color: #414048;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input[type="text"], input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #4D919C;
+  background: #FFF;
+}
+
+.btn.cancel {
+  border-radius: 5px;
+  background: #E7F7FA;
+  color: #7B9AAF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn.check {
+  border-radius: 5px;
+  background: #EE8826;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #414048;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
