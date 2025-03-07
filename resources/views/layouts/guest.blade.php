@@ -70,6 +70,12 @@
             .login-container h2 {
                 margin-bottom: 20px;
                 text-align: left;
+                color: #414048;
+                font-family: Roboto;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
             }
             .input-group {
                 margin-bottom: 15px;

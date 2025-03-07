@@ -1,5 +1,16 @@
 <head>
     <title>BioRoom | Login</title>
+    <style>
+        .label{
+            color: #414048;
+            text-align: left;
+            font-family: Roboto;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    </style>
 </head>
 <x-guest-layout>
     <!-- Session Status -->
@@ -10,19 +21,20 @@
 
         <!-- Email Address -->
         <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+            <x-input-label class="label required" for="email" :value="__('Email')"/>
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" placeholder="Masukan Email"/>
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
         <!-- Password -->
         <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+            <x-input-label class="label required" for="password" :value="__('Password')" />
 
             <x-text-input id="password" class="block mt-1 w-full"
                             type="password"
                             name="password"
-                            required autocomplete="current-password" />
+                            required autocomplete="current-password" 
+                            placeholder="Masukan Password"/>
 
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
