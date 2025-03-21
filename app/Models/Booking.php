@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Booking extends Model
 {
     use HasFactory;
-    protected $fillable=['tanggal','jam_mulai','jam_akhir','pic','jumlah_peserta','topik'];
+    protected $fillable=['id_ruangan','id_addons','pic','tanggal','jam_mulai','jam_akhir','topik','jumlah_peserta'];
 }

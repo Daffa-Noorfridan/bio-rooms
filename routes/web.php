@@ -26,7 +26,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/dashboard',[DataController::class,'index'])->name('dashboard');
     Route::get('/ruangan',[DataController::class,'ruangan'])->name('ruangan');
+    Route::get('/ruangan/detail/{id}', [DataController::class, 'show'])->name('ruangan.show');
+    Route::get('/ruangan/detail',[DataController::class,'detail'])->name('detail');
     Route::get('/booking',[DataController::class,'booking'])->name('booking');
+    Route::get('/booking/notulen',[DataController::class,'notulen'])->name('notulen');
 });
 
 require __DIR__.'/auth.php';

@@ -122,32 +122,32 @@
           </thead>
           <tbody>
             <tr>
-              <td><a href="#notulen">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
+              <td><a href="booking/notulen/">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
               <td>03-Feb-2025<br>10:00 - 10:30</td>
               <td>The Sun<br>Lantai 5</td>
               <td><span class="status selesai">Selesai</span></td>
-              <td><a href="#notulen">Buka Notulen</a></td>
+              <td><a href="booking/notulen/">Buka Notulen</a></td>
             </tr>
             <tr>
-              <td><a href="#notulen">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
+              <td><a href="booking/notulen/">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
               <td>03-Feb-2025<br>10:00 - 10:30</td>
               <td>The Sun<br>Lantai 5</td>
               <td><span class="status berjalan">Sedang Berjalan</span></td>
-              <td><a href="#notulen">Buka Notulen</a></td>
+              <td><a href="booking/notulen/">Buka Notulen</a></td>
             </tr>
             <tr>
-              <td><a href="#notulen">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
+              <td><a href="booking/notulen/">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
               <td>03-Feb-2025<br>10:00 - 10:30</td>
               <td>The Sun<br>Lantai 5</td>
               <td><span class="status dibatalkan">Dibatalkan</span></td>
-              <td><a href="#notulen">Buka Notulen</a></td>
+              <td><a href="booking/notulen/">Buka Notulen</a></td>
             </tr>
             <tr>
-              <td><a href="#notulen">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
+              <td><a href="booking/notulen/">Rapat Progress Bulanan</a><br><small>(16 Peserta)</small></td>
               <td>03-Feb-2025<br>10:00 - 10:30</td>
               <td>The Sun<br>Lantai 5</td>
               <td><span class="status berjalan">Sedang Berjalan</span></td>
-              <td><a href="#notulen">Buka Notulen</a></td>
+              <td><a href="booking/notulen/">Buka Notulen</a></td>
             </tr>
           </tbody>
         </table>
